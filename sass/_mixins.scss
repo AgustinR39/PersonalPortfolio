@@ -1,0 +1,41 @@
+@use 'variables' as v;
+
+@mixin row-between{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@mixin column-between{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@mixin box{
+    border-radius: 25px;
+    display: flex;
+    height: 118.3px;
+    position: relative;
+    margin-top: 10px;
+    width: 118.3px;
+
+    @media(min-width: 1240px){
+        height: 237.5px;
+        width: 237.5px;
+    }
+}
+
+@mixin bigBox{
+    border-radius: 26px;
+    height: 150px;
+    margin-top: 10px;
+    width: 100%;
+
+    @media(min-width: 1240px){
+        height: 237.5px;
+        width: 485px;
+    }
+}

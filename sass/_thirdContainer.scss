@@ -1,0 +1,114 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.thirdContainer{
+    display: flex;
+    
+    
+    &__box{
+        position: relative;
+    }
+
+    &__bigBox{
+        @include mixins.bigBox;
+        margin-bottom: 20px;
+        &__timeBox{
+            @include mixins.row-between;
+            background-color: v.$DarkBlue;
+            border-radius: 26px;
+            padding: 20px;
+            height: 100%;
+            width: 100%;
+
+            &__data{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                gap: 3px;
+                width: 50%;
+
+                &__temp{
+                    color: v.$White;
+                    font-size: 28px;
+                    font-weight: 700;
+                }
+
+                &__desc{
+                    color: v.$White;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                &__time{
+                    color: v.$White;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+
+                &__city{
+                    color: v.$White;
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+
+            &__img{
+                height: 120px;
+                width: 120px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1240px){
+    .thirdContainer{
+        @include mixins.row-between;
+
+        &__certificado{
+            @include mixins.box;
+
+            &__img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        &__box{
+            @include mixins.box;
+
+            &__img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        &__bigBox{
+            @include mixins.bigBox;
+            &__timeBox{
+                &__data{
+                    &__temp{
+                        font-size: 42px;
+                    }
+    
+                    &__desc{
+                        font-size: 18px;
+                    }
+    
+                    &__time{
+                        font-size: 16px;
+                    }
+    
+                    &__city{
+                        font-size: 16px;
+                    }
+                }
+    
+                &__img{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

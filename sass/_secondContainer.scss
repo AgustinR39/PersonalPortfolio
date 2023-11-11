@@ -1,0 +1,158 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.secondContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    &__bigBox{
+        @include mixins.bigBox;
+        cursor: pointer;
+        position: relative;
+
+        &__spotify{
+            @include mixins.column-between;
+            background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(icons/ajr.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 26px;
+            height: 100%;
+            padding: 20px;
+            width: 100%;
+
+            &__img{
+                height: 20px;
+                width: 20px;
+            }
+
+            &__box{
+                &__listen{
+                    color: v.$White;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                &__tittle{
+                    color: v.$White;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding-top: 2px;
+                    text-transform: uppercase;
+                }
+
+                &__artist{
+                    color: v.$White;
+                    font-size: 12px;
+                    font-weight: 300;
+                    padding-top: 2px;
+                }
+            }
+        }
+    }
+
+    &__smallBoxs{
+        @include mixins.row-between;
+
+        &__certificado{
+            @include mixins.box;
+
+            &__img{
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        &__box{
+            height: 118.3px;
+        }
+
+        &__discord{
+            border-radius: 25px;
+            display: flex;
+            height: 118.3px;
+            width: 246.6px;
+            margin-top: 10px;
+    
+            &__box{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin: auto;
+                gap: 5px;
+    
+                &__logo{
+                    height: 20px;
+                    width: 20px;
+                }
+    
+                &__text{
+                    color: v.$White;
+                    font-weight: 600;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+
+}
+
+@media(min-width: 1240px){
+    .secondContainer{
+        @include mixins.row-between;
+        
+        &__smallBoxs{
+            width: 485px;
+
+            &__box{
+                @include mixins.box;
+
+                &__img{
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+            
+            &__discord{
+                @include mixins.box;
+                &__box{
+                    &__logo{
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    &__text{
+                        font-size: 22px
+                    }
+                }
+            }
+        }
+
+        &__bigBox{
+            @include mixins.bigBox;
+            position: relative;
+
+            &__spotify{
+                &__img{
+                    height: 30px;
+                    width: 30px;
+                }
+    
+                &__box{
+                    &__listen{
+                        font-size: 18px;
+                    }
+    
+                    &__tittle{
+                        font-size: 14px;
+                    }
+    
+                    &__artist{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

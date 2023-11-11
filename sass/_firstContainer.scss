@@ -1,0 +1,201 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.firstContainer{
+    &__media{
+        &__smallBoxs{
+            @include mixins.row-between;
+
+            &__box{
+                @include mixins.box;
+
+                &__info{
+                    display: flex;
+                    flex-direction: column;
+                    margin: auto;
+                    text-align: center;
+
+                    &__age{
+                        color: v.$White;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                    }
+
+                    &__n{
+                        color: v.$White;
+                        font-size: 35px;
+                    }
+
+                    &__years{
+                        color: v.$White;
+                        font-size: 10px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+
+                    &__l{
+                        font-size: 45px;
+                        color: v.$White;
+                    }
+                }
+
+                &__img{
+                    height: 50px;
+                    width: 50px;
+                }
+
+                &__languages{
+                    padding: 10px;
+                    margin: auto;
+                    width: 105px;
+
+                    &__img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+
+        &__bigBox{
+            @include mixins.bigBox;
+            cursor: pointer;
+
+            &__github{
+                @include mixins.column-between;
+                height: 100%;
+                padding: 15px;
+                position: relative;
+                width: 100%;
+
+                &__img{
+                    height: 30px;
+                    width: 30px;
+                }
+
+                &__info{
+                    &__tittle{
+                        color: v.$White;
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    &__text{
+                        font-size: 12px;
+                        color: v.$White;
+                    }
+                }
+            }
+
+            &__projects{
+                @include mixins.column-between;
+                padding: 15px;
+                position: relative;
+
+                &__tittle{
+                        color: v.$White;
+                        font-size: 20px;
+                        margin-bottom: 5px
+                }
+
+                &__text{
+                    color: v.$White;
+                    font-size: 12px;
+                }
+
+                &__img{
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1240px){
+    .firstContainer{
+        @include mixins.row-between;
+
+        &__media{
+            &__smallBoxs{
+                width: 485px;
+
+                &__box{
+                    @include mixins.box;
+    
+                    &__info{
+                        &__age{
+                            font-size: 14px;
+                        }
+    
+                        &__n{
+                            font-size: 70px;
+                        }
+    
+                        &__years{
+                            font-size: 14px;
+                        }
+
+                        &__l{
+                            font-size: 90px;
+                        }
+                    }
+
+                    &__img{
+                        height: 100px;
+                        width: 100px;
+                    }
+
+                    &__languages{
+                        padding: 20px 35px;
+                        width: 237.5px;
+
+                        &__img{
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                }
+    
+            }
+
+            &__bigBox{
+                @include mixins.bigBox;
+                position: relative;
+
+                &__github{
+                    padding: 20px;
+
+                    &__img{
+                        height: 40px;
+                        width: 40px;
+                    }
+
+                    &__info{
+                        &__tittle{
+                            font-size: 24px;
+                        }
+
+                        &__text{
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+                &__projects{
+                    padding: 20px;
+    
+                    &__tittle{
+                            font-size: 24px;
+                    }
+    
+                    &__text{
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}

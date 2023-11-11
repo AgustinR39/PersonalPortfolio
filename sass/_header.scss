@@ -1,0 +1,101 @@
+@use 'variables' as v;
+@use 'mixins';
+
+header{
+    @include mixins.row-between;
+}
+
+.myBox{
+    background-color: v.$Violet;
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+    width: 225px;
+    
+    &__img{
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+    }
+
+    &__container{
+        margin: 10px 10px;
+
+        &__tittle{
+            color: v.$White;
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    
+        &__info{
+            color: v.$White;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 19px;
+            text-align: center;
+            margin: 0 10px
+        }
+    }
+
+}
+
+.mySecondaryBox{
+    @include mixins.column-between;
+
+    &__info{
+        background-color: v.$Violet;
+        border-radius: 10px;
+        display: flex;
+        height: 145px;
+        width: 140px;
+
+        &__img{
+            height: 70px;
+            width: 70px;
+        }
+    }
+}
+
+@media(min-width: 1240px){
+    .myBox{
+        border-radius: 15px;
+        height: 485px;
+        width: 732.5px;
+    
+        &__img{
+            height: 325px;
+            width: 325px;
+        }
+
+        &__container{
+            margin: 40px;
+            &__tittle{
+                font-size: 40px;
+                margin-bottom: 50px;
+                text-align: start;
+            }
+    
+            &__info{
+                font-size: 20px;
+                line-height: 25px;
+                text-align: start;
+                width: 320px;
+            }
+        }
+
+    }
+
+    .mySecondaryBox{
+        &__info{
+            border-radius: 15px;
+            height: 237.5px;
+            width: 237.5px;
+
+            &__img{
+                height: 120px;
+                width: 120px;
+            }
+        }
+    }
+}

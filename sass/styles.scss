@@ -1,0 +1,116 @@
+@use 'variables' as v;
+@use 'header';
+@use 'firstContainer';
+@use 'secondContainer';
+@use 'thirdContainer';
+@use 'projectsPage';
+@use 'certificadoPage';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    width: 375px;
+    background-color: v.$DarkViolet;
+    font-family: v.$Font;
+}
+
+.center{
+    margin: auto;
+}
+
+.share{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.github{
+    background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(icons/github.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.programing{
+    background: linear-gradient(to right, rgb(62 32 80 / .5), rgba(62 32 80 / .5)), url(icons/programing.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.b-red{
+    background-color: v.$Red;
+}
+
+.b-blue{
+    background-color: v.$Blue;
+    cursor: pointer;
+}
+
+.b-aqua{
+    background-color: v.$Aqua;
+}
+
+.b-green{
+    background-color: v.$Green;
+}
+
+.b-brown{
+    background-color: v.$Brown;
+}
+
+.b-violet{
+    background-color: v.$DarkGreyViolet;
+    cursor: pointer;
+}
+
+.b-orange{
+    background-color: v.$Orange;
+    cursor: pointer;
+}
+
+.b-lightViolet{
+    background-color: v.$LightViolet;
+    cursor: pointer;
+}
+
+.b-lightBlue{
+    background-color: v.$LightBlue;
+}
+
+a{
+    text-decoration: none;
+}
+
+.theContainer{
+    display: block;
+}
+
+@media(min-width: 1240px){
+    body{
+        width: 980px;
+        margin-top: 30px;
+    }
+
+    .share{
+        width: 20px;
+        height: 20px;
+    }
+
+    .none{
+        display: none;
+    }
+}
+
+@media(max-width: 1239px){
+    .noneBig{
+        display: none;
+    }
+}
