@@ -1,8 +1,11 @@
 let theContainer = document.getElementById('theContainer');
 let projects = document.getElementById('projects');
 let certificado = document.getElementById('certificado');
+let certificadoBig = document.getElementById('certificadoBig');
 
-let back = document.getElementById('back');
+
+let backProj = document.getElementById('backProj');
+let backCert = document.getElementById('backCert');
 
 let projectsPage = document.getElementById('projectsPage');
 
@@ -18,8 +21,18 @@ certificado.addEventListener('click', () => {
     certificadoPage.style.display = 'block';
 })
 
-back.addEventListener('click', () => {
+certificadoBig.addEventListener('click', () => {
+    theContainer.style.display = 'none';
+    certificadoPage.style.display = 'block';
+})
+
+backProj.addEventListener('click', () => {
     theContainer.style.display = 'block';
     projectsPage.style.display = 'none';
+})
+
+backCert.addEventListener('click', () => {
+    theContainer.style.display = 'block';
     certificadoPage.style.display = 'none';
 })
+

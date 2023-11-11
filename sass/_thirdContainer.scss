@@ -67,6 +67,11 @@
 
         &__certificado{
             @include mixins.box;
+            transition: 1s;
+
+            &:hover{
+                scale: 1.03;
+            }
 
             &__img{
                 height: 100px;

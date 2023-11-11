@@ -1,20 +1,56 @@
-// @use 'variables' as v;
+@use 'variables' as v;
 
-// .certificadoPage{
-//     border: 1px solid red;
+.certificadoPage{
+    display: none;
+    &__box{
+        background-color: v.$Violet;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        transition: 1s;
+        width: 60px;
 
-//     &__box{
-//         background-color: v.$Violet;
-//         border-radius: 10px;
-//         cursor: pointer;
-//         display: flex;
-//         height: 40px;
-//         width: 60px;
+        &:hover{
+            scale: 1.03;
+        }
 
-//         &__img{
-//             height: 25px;
-//             width: 25px;
-//             margin: auto;
-//         }
-//     }
-// }
+        &__img{
+            height: 25px;
+            width: 25px;
+            margin: auto;
+        }
+    }
+
+    &__tittle{
+        color: v.$White;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 32px;
+    }
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 70px auto;
+        width: 65%;
+        &__box{
+            border-radius: 7px;
+            box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin-bottom: 20px;
+            height: 220px;
+            width: 285px;
+    
+            &__img{
+                border-radius: 7px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

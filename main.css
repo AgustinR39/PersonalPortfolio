@@ -53,6 +53,10 @@ header {
   height: 70px;
   width: 70px;
 }
+.mySecondaryBox__info__text {
+  color: hsl(0, 0%, 100%);
+  align-items: center;
+}
 
 @media (min-width: 1240px) {
   .myBox {
@@ -86,6 +90,10 @@ header {
   .mySecondaryBox__info__img {
     height: 120px;
     width: 120px;
+  }
+  .mySecondaryBox__info__text {
+    color: hsl(0, 0%, 100%);
+    align-items: center;
   }
 }
 .firstContainer__media__smallBoxs {
@@ -560,6 +568,7 @@ header {
     position: relative;
     margin-top: 10px;
     width: 118.3px;
+    transition: 1s;
   }
 }
 @media (min-width: 1240px) and (min-width: 1240px) {
@@ -569,6 +578,9 @@ header {
   }
 }
 @media (min-width: 1240px) {
+  .thirdContainer__certificado:hover {
+    scale: 1.03;
+  }
   .thirdContainer__certificado__img {
     height: 100px;
     width: 100px;
@@ -633,7 +645,11 @@ header {
   cursor: pointer;
   display: flex;
   height: 40px;
+  transition: 1s;
   width: 60px;
+}
+.projectsPage__box:hover {
+  scale: 1.03;
 }
 .projectsPage__box__img {
   height: 25px;
@@ -676,6 +692,56 @@ header {
   font-size: 20px;
   font-weight: 500;
   padding: 10px 15px 0;
+}
+
+.certificadoPage {
+  display: none;
+}
+.certificadoPage__box {
+  background-color: rgb(72, 32, 107);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  transition: 1s;
+  width: 60px;
+}
+.certificadoPage__box:hover {
+  scale: 1.03;
+}
+.certificadoPage__box__img {
+  height: 25px;
+  width: 25px;
+  margin: auto;
+}
+.certificadoPage__tittle {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-top: 15px;
+  font-size: 32px;
+}
+.certificadoPage__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 70px auto;
+  width: 65%;
+}
+.certificadoPage__container__box {
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+  height: 220px;
+  width: 285px;
+}
+.certificadoPage__container__box__img {
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
 }
 
 * {
@@ -759,6 +825,10 @@ body {
 
 a {
   text-decoration: none;
+  transition: 1s;
+}
+a:hover {
+  scale: 1.03;
 }
 
 .theContainer {

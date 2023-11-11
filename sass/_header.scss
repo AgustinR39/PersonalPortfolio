@@ -54,6 +54,11 @@ header{
             height: 70px;
             width: 70px;
         }
+
+        &__text{
+            color: v.$White;
+            align-items: center;
+        }
     }
 }
 
@@ -95,6 +100,11 @@ header{
             &__img{
                 height: 120px;
                 width: 120px;
+            }
+
+            &__text{
+                color: v.$White;
+                align-items: center;
             }
         }
     }
