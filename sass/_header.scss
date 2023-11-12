@@ -56,13 +56,17 @@ header{
         }
 
         &__text{
+            // align-items: center;
             color: v.$White;
-            align-items: center;
+            cursor: pointer;
+            margin: auto;
+            font-size: 14px;
+            font-weight: 600;
         }
     }
 }
 
-@media(min-width: 1240px){
+@media(min-width: 600px){
     .myBox{
         border-radius: 15px;
         height: 485px;
@@ -103,8 +107,7 @@ header{
             }
 
             &__text{
-                color: v.$White;
-                align-items: center;
+                font-size: 23px;
             }
         }
     }

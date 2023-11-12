@@ -61,7 +61,7 @@
     }
 }
 
-@media(min-width: 1240px){
+@media(min-width: 600px){
     .thirdContainer{
         @include mixins.row-between;
 
@@ -70,7 +70,7 @@
             transition: 1s;
 
             &:hover{
-                scale: 1.03;
+                scale: 1.05;
             }
 
             &__img{

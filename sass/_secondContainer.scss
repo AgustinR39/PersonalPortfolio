@@ -98,7 +98,7 @@
 
 }
 
-@media(min-width: 1240px){
+@media(min-width: 600px){
     .secondContainer{
         @include mixins.row-between;
         

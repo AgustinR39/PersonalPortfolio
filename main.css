@@ -7,7 +7,7 @@ header {
 }
 
 .myBox {
-  background-color: rgb(72, 32, 107);
+  background-color: rgb(98, 35, 153);
   border-radius: 10px;
   height: 300px;
   position: relative;
@@ -43,7 +43,7 @@ header {
   justify-content: space-between;
 }
 .mySecondaryBox__info {
-  background-color: rgb(72, 32, 107);
+  background-color: rgb(98, 35, 153);
   border-radius: 10px;
   display: flex;
   height: 145px;
@@ -55,10 +55,13 @@ header {
 }
 .mySecondaryBox__info__text {
   color: hsl(0, 0%, 100%);
-  align-items: center;
+  cursor: pointer;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .myBox {
     border-radius: 15px;
     height: 485px;
@@ -92,8 +95,7 @@ header {
     width: 120px;
   }
   .mySecondaryBox__info__text {
-    color: hsl(0, 0%, 100%);
-    align-items: center;
+    font-size: 23px;
   }
 }
 .firstContainer__media__smallBoxs {
@@ -110,7 +112,7 @@ header {
   margin-top: 10px;
   width: 118.3px;
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .firstContainer__media__smallBoxs__box {
     height: 237.5px;
     width: 237.5px;
@@ -161,7 +163,7 @@ header {
   width: 100%;
   cursor: pointer;
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .firstContainer__media__bigBox {
     height: 237.5px;
     width: 485px;
@@ -212,7 +214,7 @@ header {
   width: 20px;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .firstContainer {
     display: flex;
     flex-direction: row;
@@ -231,13 +233,13 @@ header {
     width: 118.3px;
   }
 }
-@media (min-width: 1240px) and (min-width: 1240px) {
+@media (min-width: 600px) and (min-width: 600px) {
   .firstContainer__media__smallBoxs__box {
     height: 237.5px;
     width: 237.5px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .firstContainer__media__smallBoxs__box__info__age {
     font-size: 14px;
   }
@@ -270,13 +272,13 @@ header {
     position: relative;
   }
 }
-@media (min-width: 1240px) and (min-width: 1240px) {
+@media (min-width: 600px) and (min-width: 600px) {
   .firstContainer__media__bigBox {
     height: 237.5px;
     width: 485px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .firstContainer__media__bigBox__github {
     padding: 20px;
   }
@@ -315,7 +317,7 @@ header {
   cursor: pointer;
   position: relative;
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .secondContainer__bigBox {
     height: 237.5px;
     width: 485px;
@@ -370,7 +372,7 @@ header {
   margin-top: 10px;
   width: 118.3px;
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .secondContainer__smallBoxs__certificado {
     height: 237.5px;
     width: 237.5px;
@@ -409,7 +411,7 @@ header {
   letter-spacing: 2px;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .secondContainer {
     display: flex;
     flex-direction: row;
@@ -428,13 +430,13 @@ header {
     width: 118.3px;
   }
 }
-@media (min-width: 1240px) and (min-width: 1240px) {
+@media (min-width: 600px) and (min-width: 600px) {
   .secondContainer__smallBoxs__box {
     height: 237.5px;
     width: 237.5px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .secondContainer__smallBoxs__box__img {
     height: 100px;
     width: 100px;
@@ -448,13 +450,13 @@ header {
     width: 118.3px;
   }
 }
-@media (min-width: 1240px) and (min-width: 1240px) {
+@media (min-width: 600px) and (min-width: 600px) {
   .secondContainer__smallBoxs__discord {
     height: 237.5px;
     width: 237.5px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .secondContainer__smallBoxs__discord__box__logo {
     height: 30px;
     width: 30px;
@@ -470,13 +472,13 @@ header {
     position: relative;
   }
 }
-@media (min-width: 1240px) and (min-width: 1240px) {
+@media (min-width: 600px) and (min-width: 600px) {
   .secondContainer__bigBox {
     height: 237.5px;
     width: 485px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .secondContainer__bigBox__spotify__img {
     height: 30px;
     width: 30px;
@@ -504,7 +506,7 @@ header {
   width: 100%;
   margin-bottom: 20px;
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .thirdContainer__bigBox {
     height: 237.5px;
     width: 485px;
@@ -554,7 +556,7 @@ header {
   width: 120px;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .thirdContainer {
     display: flex;
     flex-direction: row;
@@ -571,15 +573,15 @@ header {
     transition: 1s;
   }
 }
-@media (min-width: 1240px) and (min-width: 1240px) {
+@media (min-width: 600px) and (min-width: 600px) {
   .thirdContainer__certificado {
     height: 237.5px;
     width: 237.5px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .thirdContainer__certificado:hover {
-    scale: 1.03;
+    scale: 1.05;
   }
   .thirdContainer__certificado__img {
     height: 100px;
@@ -594,13 +596,13 @@ header {
     width: 118.3px;
   }
 }
-@media (min-width: 1240px) and (min-width: 1240px) {
+@media (min-width: 600px) and (min-width: 600px) {
   .thirdContainer__box {
     height: 237.5px;
     width: 237.5px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .thirdContainer__box__img {
     height: 100px;
     width: 100px;
@@ -612,13 +614,13 @@ header {
     width: 100%;
   }
 }
-@media (min-width: 1240px) and (min-width: 1240px) {
+@media (min-width: 600px) and (min-width: 600px) {
   .thirdContainer__bigBox {
     height: 237.5px;
     width: 485px;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   .thirdContainer__bigBox__timeBox__data__temp {
     font-size: 42px;
   }
@@ -640,7 +642,7 @@ header {
   display: none;
 }
 .projectsPage__box {
-  background-color: rgb(72, 32, 107);
+  background-color: rgb(98, 35, 153);
   border-radius: 10px;
   cursor: pointer;
   display: flex;
@@ -698,7 +700,7 @@ header {
   display: none;
 }
 .certificadoPage__box {
-  background-color: rgb(72, 32, 107);
+  background-color: rgb(98, 35, 153);
   border-radius: 10px;
   cursor: pointer;
   display: flex;
@@ -828,14 +830,14 @@ a {
   transition: 1s;
 }
 a:hover {
-  scale: 1.03;
+  scale: 1.05;
 }
 
 .theContainer {
   display: block;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 600px) {
   body {
     width: 980px;
     margin-top: 30px;
@@ -848,7 +850,7 @@ a:hover {
     display: none;
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 559px) {
   .noneBig {
     display: none;
   }
