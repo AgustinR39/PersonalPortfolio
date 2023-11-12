@@ -42,7 +42,7 @@ window.addEventListener('load', () => {
                     console.log(data)
                     tempDesc.textContent = data.weather[0].main
 
-                    location.textContent = `${data.name}, ${data.sys.country}`
+                    location.textContent = ` ${data.sys.country}`
 
                     switch (data.weather[0].main) {
                         case 'Thunderstorm':
